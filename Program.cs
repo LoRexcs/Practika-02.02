@@ -5,7 +5,7 @@ class Appointment
 {
     public DateTime Date { get; set; }
     public TimeSpan Time { get; set; }
-    public string PatientLastName { get; set; }
+    public string PatientLastName { get; set; } \\lox
 }
 
 class Schedule
