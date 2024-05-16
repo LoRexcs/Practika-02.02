@@ -14,7 +14,7 @@ class Schedule
 
     public void AddAppointment()
     {
-        Console.WriteLine("Введите дату (в формате дд.мм.гггг):");
+        Console.WriteLine("Введите дату (в формате дд.мм.гггг):"); //Добавь возможность редактирования записей
         DateTime date;
         if (!DateTime.TryParse(Console.ReadLine(), out date))
         {
@@ -43,7 +43,7 @@ class Schedule
         if (!IsTimeSlotOccupied(appointment.Time))
         {
             appointments.Add(appointment);
-            Console.WriteLine("Запись успешно добавлена.");
+            Console.WriteLine("Запись успешно добавлена."); //Добавь возможность удаления записей
         }
         else
         {
